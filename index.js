@@ -20,7 +20,13 @@ Do the following:
    HINT: no function required
 */
 
+const votingAge = 18
 
+if (votingAge >= 18){
+  console.log('Ready to vote!');
+} else if (votingAge < 18){
+  console.log('Not ready to vote!');
+}
 
 /*
 Task 1b - Values (not auto tested)
@@ -34,8 +40,14 @@ Do the following:
    HINT: no function required
 */
 
+const firstThing = 1
+const secondThing = 2
 
-
+if (firstThing === 1){
+  console.log(true);
+} else if (secondThing === 3){
+  console.log(false);
+}
 
 
 /*
@@ -49,8 +61,9 @@ Do the following:
    HINT: look up the Number method
 */
 
+let year = '1999';
 
-
+console.log(Number('year'));
 
 /*
 Task 1d - Multiply
@@ -65,7 +78,7 @@ function multiply(num1, num2){
   return num1 * num2;
 }
 
-
+multiply(2, 3)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -77,8 +90,8 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age * 7.00
 }
 
 
@@ -129,8 +142,23 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+
+function hungryDog(weight, age){
+  if (weight <= 5 && age >= 1){
+    return weight * 0.05
+  } else if (weight >= 6 && weight <= 10 && age >= 1){
+    return weight * 0.04
+  } else if (weight >= 11 && weight <= 15 && age >= 1){
+    return weight * 0.03
+  } else if (weight > 15 && age >= 1){
+    return weight * 0.02
+  } else if (age >= 0.16 && age <= 0.33){
+    return weight * 0.10
+  } else if (age > 0.33 && age <= 0.58){
+    return weight * 0.05
+  } else if (age > 0.58 && age <= 1.00){
+    return weight * 0.04
+  }
 }
 
 
