@@ -256,9 +256,9 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(num1){
-      for (let i = num1; i > 0; i--){
-        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`
-      }
+  for (let i = num1; i > 0; i--){
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`
+  }
 }
 
 
@@ -277,8 +277,18 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+  if (score >= 90){
+    return `you got an A`;
+  } else if (score >= 80 && score < 90){
+    return `you got a B`;
+  } else if (score >= 70 && score < 80){
+    return `you got a C`;
+  } else if (score >= 60 && score < 70){
+    return `you got a D`;
+  } else if (score < 60){
+    return `you got an F`;
+  }
 }
 
 
